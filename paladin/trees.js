@@ -58,7 +58,7 @@ var trees = {
         },
         {
             "name": "Healing Light",
-            "description": "Increases the amount healed by your Hoöy Light and Flash of Light spells by %p%.",
+            "description": "Increases the amount healed by your Holy Light and Flash of Light spells by %p%.",
             "values": {
                 "%p": 4
             },
@@ -260,6 +260,8 @@ var trees = {
             "current": 0,
             "image": "spell_holy_blessedlife.png"
         },
+
+            
         {
             "name": "Unyielding Faith",
             "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
@@ -273,6 +275,8 @@ var trees = {
             "current": 0,
             "image": "spell_holy_holyguidance.png"
         },
+
+            
         {
             "name": "Unyielding Faith",
             "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
@@ -319,6 +323,8 @@ var trees = {
                 "current": 0,
                 "image": "ability_defend.png"
             },
+
+            
             {
                 "name": "Unyielding Faith",
                 "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
@@ -359,6 +365,7 @@ var trees = {
                 "image": "spell_holy_devotion.png"
             },
 
+            
             {
                 "name": "Unyielding Faith",
                 "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
@@ -412,6 +419,7 @@ var trees = {
                 "image": "spell_holy_mindsooth.png"
             },
 
+            
             {
                 "name": "Unyielding Faith",
                 "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
@@ -562,6 +570,7 @@ var trees = {
                 "image": "spell_holy_ardentdefender.png"
             },
 
+            
             {
                 "name": "Unyielding Faith",
                 "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
@@ -576,6 +585,7 @@ var trees = {
                 "image": "spell_holy_weaponmastery.png"
             },
 
+            
             {
                 "name": "Unyielding Faith",
                 "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
@@ -867,6 +877,7 @@ var trees = {
                 "image": "spell_holy_divinepurpose.png"
             },
 
+            
             {
                 "name": "Unyielding Faith",
                 "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
@@ -881,6 +892,7 @@ var trees = {
                 "image": "spell_holy_fanaticism.png"
             },
 
+            
             {
                 "name": "Unyielding Faith",
                 "description": "Increases your chance to resist Fear and Disorient effects by an additional %p%.",
