@@ -21,19 +21,70 @@ function initTrees() {
                     row.innerHTML+= '<span style="width: 66px;"></span>';
                 } else {
                     const talent = filteredTalents.find((item) => item.col == j);
+
+                    let description = talent.description;
+
+                    if (Object.keys(talent.values).length > 0) {
+                        Object.keys(talent.values).forEach((key) => {
+                            const value = talent.values[key];
+                            description = description.replace(key, (talent.current == 0 ? value : (value * talent.current)));
+                        })
+                    }
+
                     row.innerHTML+= 
                     '<div class="talentbox" id="'+key+'_'+talent.id+'" onclick="putPoint(event)">' + 
                     '<img src="'+talent.image+'" class="talent"/>' + 
                     '<span class="talentcounter">'+talent.current+'/'+talent.max+'</span>' +
+                    '<div popover="hint" id="tooltip_'+key+'_'+talent.id+'" class="tooltip">'+
+                        '<h3>'+talent.name+'</h3>'+
+                        '<p>' + description + '</p>'+
+                    '</div>' +
                     '</div>';
-
-                    // document.getElementById(key+'_'+talent.id).addEventListener('click', putPoint);
                 }
             }
         }
 
+        let boxes = document.querySelectorAll(".talentbox");
+        let tooltips = document.querySelectorAll(".tooltip");
         
+        for (let i = 0; i < boxes.length; i++) {
+            boxes[i].addEventListener("mouseover", (event) => {
+                popup(tooltips[i], boxes[i], event);
+                // tooltips[i].showPopover({ source: boxes[i] });
+            });
+            boxes[i].addEventListener("mouseleave", () => {
+                tooltips[i].hidePopover();
+            });
+        }
     });
+}
+
+function popup(tooltip, box, event) {
+    let idsplit = tooltip.id.split('_');
+    console.log(idsplit);
+    
+    const talent = build[idsplit[1]].talents.find((item) => item.id == idsplit[2]);
+    let currentDescription = talent.description;
+    let nextDescription = talent.description;
+
+    Object.keys(talent.values).forEach((key) => {
+        const value = talent.values[key];
+        currentDescription = currentDescription.replace(key, (talent.current == 0 ? value : (value * talent.current)));
+        nextDescription = nextDescription.replace(key, (talent.current == 0 ? value : (value * (talent.current+1))));
+    });
+
+    tooltip.innerHTML = '<h3>'+talent.name+'</h3>';
+
+
+    if (talent.current > 0) {
+        tooltip.innerHTML += '<p><b>Currently: </b>' + currentDescription + '</p>';
+    }
+
+    if (talent.current < talent.max) {
+        tooltip.innerHTML += '<p><b>Next: </b>' + nextDescription + '</p>';
+    }
+    
+    tooltip.showPopover({source: box});
 }
 
 function putPoint(event) {
