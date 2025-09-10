@@ -7,7 +7,8 @@ THIS IS A WORK IN PROGRESS AND NOT FULLY FUNCTIONAL
 Current Content:
 - Class selection
 - Paladin Trees
+- mouseover popups with talent descriptions (not all talents have the correct text yet)
 
 Planned Content:
 - All other Classes (duh)
-- mouseover popups with talent descriptions
+- Import/ Export of Builds
