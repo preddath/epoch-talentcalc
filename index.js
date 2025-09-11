@@ -1,12 +1,17 @@
-var build = JSON.parse(JSON.stringify(trees));
-
-function initTrees() {
+function initTrees(classname) {
+    build = JSON.parse(JSON.stringify(this[classname]));
     let container = document.getElementById('container');
+    container.innerHTML = "";
+
+    document.getElementById(selectedClass).classList.remove('selected');
+    selectedClass = classname;
+    document.getElementById(selectedClass).classList.add('selected');
+
     Object.keys(build).forEach((key) => {
         let tree = build[key];
         container.innerHTML+= "<div class='specbox' id='"+key+"'>" +
         '<span class="specheader">'+ key.toUpperCase() +' (0)</span>' +
-        '<div id="'+key+'_tree" class="spectree" style="background-image: url('+ tree.image +'); background-size: cover;">' +
+        '<div id="'+key+'_tree" class="spectree" style="background-image: url(images/'+ tree.image +'); background-size: cover;">' +
         '</div>' +
         '</div>';
 
@@ -18,7 +23,7 @@ function initTrees() {
             let filteredTalents = build[key].talents.filter((item) => item.row == i);
             for (let j=0;j<4;j++) {
                 if (!filteredTalents.find(item => item.col == j)) {
-                    row.innerHTML+= '<span style="width: 66px;"></span>';
+                    row.innerHTML+= '<span style="width: 60px;"></span>';
                 } else {
                     const talent = filteredTalents.find((item) => item.col == j);
 
@@ -33,7 +38,7 @@ function initTrees() {
 
                     row.innerHTML+= 
                     '<div class="talentbox" id="'+key+'_'+talent.id+'" onclick="putPoint(event)">' + 
-                    '<img src="'+talent.image+'" class="talent"/>' + 
+                    '<img style="width: 60px" src="images/'+talent.image+'" class="talent"/>' + 
                     '<span class="talentcounter">'+talent.current+'/'+talent.max+'</span>' +
                     '<div popover="hint" id="tooltip_'+key+'_'+talent.id+'" class="tooltip">'+
                         '<h3>'+talent.name+'</h3>'+
@@ -61,7 +66,6 @@ function initTrees() {
 
 function popup(tooltip, box, event) {
     let idsplit = tooltip.id.split('_');
-    console.log(idsplit);
     
     const talent = build[idsplit[1]].talents.find((item) => item.id == idsplit[2]);
     let currentDescription = talent.description;

@@ -1,4 +1,4 @@
-var trees = {
+var paladin = {
     "holy": {
         "image": "background-paladin-holy.jpg",
         "total": 0,

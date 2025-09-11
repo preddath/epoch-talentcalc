@@ -1,4 +1,4 @@
-var trees = {
+var shaman = {
   "elemental": {
     "image": "",
     "total": 0,

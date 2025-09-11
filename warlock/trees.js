@@ -1,4 +1,4 @@
-var trees = {
+var warlock = {
   "affliction": {
     "image": "",
     "total": 0,

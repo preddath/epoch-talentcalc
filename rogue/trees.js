@@ -1,4 +1,4 @@
-var trees = {
+var rogue = {
   "assassination": {
     "image": "",
     "total": 0,

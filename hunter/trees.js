@@ -1,4 +1,4 @@
-var trees = {
+var hunter = {
   "marksmanship": {
     "image": "",
     "total": 0,

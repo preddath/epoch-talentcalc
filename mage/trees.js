@@ -1,4 +1,4 @@
-var trees = {
+var mage = {
   "arcane": {
     "image": "",
     "total": 0,

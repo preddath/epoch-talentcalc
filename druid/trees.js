@@ -1,4 +1,4 @@
-var trees = {
+var druid = {
   "balance": {
     "image": "",
     "total": 0,

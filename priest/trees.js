@@ -1,4 +1,4 @@
-var trees = {
+var priest = {
   "holy": {
     "image": "",
     "total": 0,

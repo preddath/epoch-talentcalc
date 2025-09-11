@@ -7,6 +7,10 @@
     background-color: aliceblue;
 }
 
+.selected {
+    background-color: aliceblue;
+}
+
 .specrow {
     display: flex;
     gap: 2rem;
@@ -28,6 +32,10 @@
     padding: 1rem;
     background-color: #464646;
     color: white;
+}
+
+.selectimg {
+    width: 1.75rem;
 }
 
 .spectree {
