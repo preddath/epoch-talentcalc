@@ -111,6 +111,7 @@ function putPoint(event) {
 }
 
 function removePoint(event) {
+    event.preventDefault();
     const element = event.target.classList.contains('talentbox') ? event.target : event.target.parentNode;
     const tree = element.id.split("_")[0];
     const index = element.id.split("_")[1];
