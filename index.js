@@ -10,8 +10,8 @@ function initTrees(classname) {
     Object.keys(build).forEach((key) => {
         let tree = build[key];
         container.innerHTML+= "<div class='specbox' id='"+key+"'>" +
-        '<span class="specheader">'+ key.toUpperCase() +' (0)</span>' +
-        '<div id="'+key+'_tree" class="spectree" style="background-image: url(images/'+ tree.image +'); background-size: cover;">' +
+        '<span class="specheader '+classname+'">'+ key.toUpperCase() +' (0)</span>' +
+        '<div id="'+key+'_tree" class="spectree '+classname+'" style="background-image: url(images/'+ tree.image +'); background-size: cover;">' +
         '</div>' +
         '</div>';
 
@@ -23,7 +23,7 @@ function initTrees(classname) {
             let filteredTalents = build[key].talents.filter((item) => item.row == i);
             for (let j=0;j<4;j++) {
                 if (!filteredTalents.find(item => item.col == j)) {
-                    row.innerHTML+= '<span style="width: 60px;"></span>';
+                    row.innerHTML+= '<span style="width: 55px;"></span>';
                 } else {
                     const talent = filteredTalents.find((item) => item.col == j);
 
@@ -38,7 +38,7 @@ function initTrees(classname) {
 
                     row.innerHTML+= 
                     '<div class="talentbox" id="'+key+'_'+talent.id+'" onclick="putPoint(event)">' + 
-                    '<img style="width: 60px" src="images/'+talent.image+'" class="talent"/>' + 
+                    '<img style="width: 55px" src="images/'+talent.image+'" class="talent '+classname+'"/>' + 
                     '<span class="talentcounter">'+talent.current+'/'+talent.max+'</span>' +
                     '<div popover="hint" id="tooltip_'+key+'_'+talent.id+'" class="tooltip">'+
                         '<h3>'+talent.name+'</h3>'+

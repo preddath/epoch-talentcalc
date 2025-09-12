@@ -19,15 +19,13 @@
 }
 
 .talent {
-    border: gold 1px solid;
-    border-radius: 5%;
+    border-radius: 12.5%;
     cursor: pointer;
 }
 
 .specheader {
     display: flex; 
     flex-direction: column;
-    border: gold 2px solid;
     border-radius: 5%;
     padding: 1rem;
     background-color: #464646;
@@ -39,7 +37,6 @@
 }
 
 .spectree {
-    border: gold 2px solid;
     border-radius: 5px;
     padding: 2rem;
     background-color: #464646;
@@ -70,4 +67,49 @@
     background-color: #464646;
     color: gold;
     max-width: 20%;
+}
+
+.warrior {
+    color: burlywood;
+    border: burlywood 2px solid;
+}
+
+.paladin {
+    color: gold;
+    border: gold 2px solid;
+}
+
+.hunter {
+    color: darkseagreen;
+    border: darkseagreen 2px solid;
+}
+
+.rogue {
+    color: yellow;
+    border: yellow 2px solid;
+}
+
+.priest {
+    color: white;
+    border: white 2px solid;
+}
+
+.shaman {
+    color: darkblue;
+    border: darkblue 2px solid;
+}
+
+.mage {
+    color: lightblue;
+    border: lightblue 2px solid;
+}
+
+.warlock {
+    color: violet;
+    border: violet 2px solid;
+}
+
+.druid {
+    color: orange;
+    border: orange 2px solid;
 }
