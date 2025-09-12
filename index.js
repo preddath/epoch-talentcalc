@@ -107,12 +107,24 @@ function putPoint(event) {
         build[tree].total++;
         document.querySelector('#' + element.id + ' .talentcounter').innerHTML = talent.current+"/"+talent.max;
         document.querySelector('#' + tree + ' .specheader').innerHTML = tree.toUpperCase() + ' (' + build[tree].total + ')';
-    } else {
-        //build[tree].map(item => {
-            //if (item.index === talent.index) {
-                //item.current = 0;
-            //}
-        //});
-        //document.querySelector('#' + element.id + ' .talentcounter').innerHTML = "0/"+talent.max;
+    }
+}
+
+function removePoint(event) {
+    const element = event.target.classList.contains('talentbox') ? event.target : event.target.parentNode;
+    const tree = element.id.split("_")[0];
+    const index = element.id.split("_")[1];
+
+    let talent = build[tree].talents.find((item) => item.id == index);
+    
+    if (talent.current > 0) {
+        build[tree].talents.map(item => {
+            if (item.id === talent.id) {
+                item.current--;
+            }
+        });
+        build[tree].total--;
+        document.querySelector('#' + element.id + ' .talentcounter').innerHTML = talent.current+"/"+talent.max;
+        document.querySelector('#' + tree + ' .specheader').innerHTML = tree.toUpperCase() + ' (' + build[tree].total + ')';
     }
 }
