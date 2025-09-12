@@ -30,6 +30,7 @@
     padding: 1rem;
     background-color: #464646;
     color: white;
+    margin-bottom: 0.5rem;
 }
 
 .selectimg {
@@ -63,12 +64,6 @@
     align-items: center;
 }
 
-.tooltip {
-    background-color: #464646;
-    color: gold;
-    max-width: 20%;
-}
-
 .warrior {
     color: burlywood;
     border: burlywood 2px solid;
@@ -85,8 +80,8 @@
 }
 
 .rogue {
-    color: yellow;
-    border: yellow 2px solid;
+    color: #f8f849;
+    border: #f8f849 2px solid;
 }
 
 .priest {
@@ -112,4 +107,18 @@
 .druid {
     color: orange;
     border: orange 2px solid;
+}
+
+[popover="auto"] {
+  inset: unset;
+  position: absolute;
+  top: calc(anchor(bottom) + 5px);
+  justify-self: anchor-center;
+  margin: 0;
+
+  padding: 8px;
+  border-radius: 6px;
+  background: #464646;
+  box-shadow: 1px 1px 3px #999;
+  max-width: 20%;
 }

@@ -37,10 +37,10 @@ function initTrees(classname) {
                     }
 
                     row.innerHTML+= 
-                    '<div class="talentbox" id="'+key+'_'+talent.id+'" onclick="putPoint(event)" oncontextmenu="removePoint(event)">' + 
+                    '<div class="talentbox" id="'+key+'_'+talent.id+'" onclick="putPoint(event)" oncontextmenu="removePoint(event)" popovertarget="tooltip_'+key+'_'+talent.id+'">' + 
                     '<img style="width: 55px" src="images/'+talent.image+'" class="talent '+classname+'"/>' + 
                     '<span class="talentcounter">'+talent.current+'/'+talent.max+'</span>' +
-                    '<div popover="hint" id="tooltip_'+key+'_'+talent.id+'" class="tooltip">'+
+                    '<div popover="auto" id="tooltip_'+key+'_'+talent.id+'" class="tooltip '+classname+'">'+
                         '<h3>'+talent.name+'</h3>'+
                         '<p>' + description + '</p>'+
                     '</div>' +
@@ -53,9 +53,9 @@ function initTrees(classname) {
         let tooltips = document.querySelectorAll(".tooltip");
         
         for (let i = 0; i < boxes.length; i++) {
-            boxes[i].addEventListener("mouseover", (event) => {
-                popup(tooltips[i], boxes[i], event);
-                // tooltips[i].showPopover({ source: boxes[i] });
+            boxes[i].addEventListener("mouseover", () => {
+                popup(tooltips[i]);
+                tooltips[i].showPopover({ source: boxes[i] });
             });
             boxes[i].addEventListener("mouseleave", () => {
                 tooltips[i].hidePopover();
@@ -64,7 +64,7 @@ function initTrees(classname) {
     });
 }
 
-function popup(tooltip, box, event) {
+function popup(tooltip) {
     let idsplit = tooltip.id.split('_');
     
     const talent = build[idsplit[1]].talents.find((item) => item.id == idsplit[2]);
@@ -79,7 +79,6 @@ function popup(tooltip, box, event) {
 
     tooltip.innerHTML = '<h3>'+talent.name+'</h3>';
 
-
     if (talent.current > 0) {
         tooltip.innerHTML += '<p><b>Currently: </b>' + currentDescription + '</p>';
     }
@@ -87,8 +86,6 @@ function popup(tooltip, box, event) {
     if (talent.current < talent.max) {
         tooltip.innerHTML += '<p><b>Next: </b>' + nextDescription + '</p>';
     }
-    
-    tooltip.showPopover({source: box});
 }
 
 function putPoint(event) {
@@ -96,9 +93,11 @@ function putPoint(event) {
     const tree = element.id.split("_")[0];
     const index = element.id.split("_")[1];
 
+    const tooltip = document.getElementById('tooltip_'+tree+'_'+index);
+
     let talent = build[tree].talents.find((item) => item.id == index);
     
-    if (talent.current < talent.max && build[tree].total >= ((talent.row)*5)) {
+    if (talent.current < talent.max && build[tree].total >= ((talent.row)*5) && build[tree].total < build[tree].max) {
         build[tree].talents.map(item => {
             if (item.id === talent.id) {
                 item.current++;
@@ -107,7 +106,10 @@ function putPoint(event) {
         build[tree].total++;
         document.querySelector('#' + element.id + ' .talentcounter').innerHTML = talent.current+"/"+talent.max;
         document.querySelector('#' + tree + ' .specheader').innerHTML = tree.toUpperCase() + ' (' + build[tree].total + ')';
+        popup(tooltip);
     }
+
+    tooltip.showPopover({ source: element });
 }
 
 function removePoint(event) {
@@ -115,6 +117,8 @@ function removePoint(event) {
     const element = event.target.classList.contains('talentbox') ? event.target : event.target.parentNode;
     const tree = element.id.split("_")[0];
     const index = element.id.split("_")[1];
+
+    const tooltip = document.getElementById('tooltip_'+tree+'_'+index);
 
     let talent = build[tree].talents.find((item) => item.id == index);
     
@@ -127,5 +131,8 @@ function removePoint(event) {
         build[tree].total--;
         document.querySelector('#' + element.id + ' .talentcounter').innerHTML = talent.current+"/"+talent.max;
         document.querySelector('#' + tree + ' .specheader').innerHTML = tree.toUpperCase() + ' (' + build[tree].total + ')';
+        popup(tooltip);
     }
+
+    tooltip.showPopover({ source: element });
 }
