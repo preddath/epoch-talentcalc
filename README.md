@@ -7,12 +7,11 @@ THIS IS A WORK IN PROGRESS AND NOT FULLY FUNCTIONAL
 
 Current Content:
 - Class selection
+- Warrior Trees
 - Paladin Trees
   - (not all talents have the correct text yet)
-- Warrior Trees
-  - Arms fully (with a few low Quality Icons)
-  - Fury and Prot only in Structure
-
+ 
+    
 Planned Content:
 - All other Classes (duh)
 - Import/ Export of Builds
