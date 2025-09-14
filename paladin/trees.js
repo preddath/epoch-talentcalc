@@ -197,7 +197,7 @@ var paladin = {
             "name": "Purifying Power",
             "description": "Reduces the mana cost of your Cleanse, Purify and Consecration spells by %p% and increases the critical strike chance of your Exorcism and Holy Wrath spells by %e%. Additionally, hitting an enemy with Exorcism or Holy Wrath increases the critical effect chance of your next healing spell by 30%. ",
             "values": {
-                "%p": 5
+                "%p": 5,
                 "%e": 10
             },
             "id": 14,
@@ -253,7 +253,7 @@ var paladin = {
             "name": "Blessed Life",
             "description": "All attacks against you have a %p$ chance to cause half damage, and your resitances are increased by %n.",
             "values": {
-                "%p": 4
+                "%p": 4,
                 "%n": 4
             },
             "id": 18,

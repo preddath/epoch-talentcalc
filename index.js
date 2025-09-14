@@ -12,9 +12,10 @@ function initTrees(classname) {
         container.innerHTML+= "<div class='specbox' id='"+key+"'>" +
         '<span class="specheader '+classname+'">'+ key.toUpperCase() +' (0)</span>' +
         '<div id="'+key+'_tree" class="spectree '+classname+'" style="background-image: url(images/'+ tree.image +'); background-size: cover;">' +
+        (tree.talents.length === 0 ? '<h1>COMING SOON</h1>' : '') +
         '</div>' +
         '</div>';
-
+    
         let keytree = document.getElementById(key+'_tree');
         for (let i = 0; i < 9; i++) {
             keytree.innerHTML += '<div class="specrow" id="'+key+'_row_'+i+'"></div>';
@@ -77,7 +78,9 @@ function popup(tooltip) {
         nextDescription = nextDescription.replace(key, (talent.current == 0 ? value : (value * (talent.current+1))));
     });
 
-    tooltip.innerHTML = '<h3>'+talent.name+'</h3>';
+    tooltip.innerHTML = '<div class="popupheader"><h3>'+talent.name+'</h3>'+
+    (talent.hasOwnProperty('type') && talent.type === "ability" ? '<h4>Ability</h4>' : '')
+    +'</div>';
 
     if (talent.current > 0) {
         tooltip.innerHTML += '<p><b>Currently: </b>' + currentDescription + '</p>';

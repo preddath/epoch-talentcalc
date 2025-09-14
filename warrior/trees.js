@@ -208,7 +208,7 @@ var warrior = {
             "col": 2,
             "max": 5,
             "current": 0,
-            "image": "ability_warrior_decisivestrike.webp"
+            "image": "inv_mace_01.webp"
         },
       {
             "name": "Sword Specialization",
@@ -358,146 +358,147 @@ var warrior = {
     "max": 60,
     "talents": [
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Cruelty",
+            "description": "Increases your chance to get a critical strike with melee weapons by %p%.",
             "values": {
-                "%p": 2
+                "%p": 1
             },
             "id": 0,
-            "row": 0,
-            "col": 1,
-            "max": 5,
-            "current": 0,
-            "image": "inv_sword_27.png"
-        },
-      {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
-            "values": {
-                "%p": 2
-            },
-            "id": 1,
             "row": 0,
             "col": 2,
             "max": 5,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_rogue_eviscerate.png"
+        },
+      {
+            "name": "Booming Voice",
+            "description": "Increases the area of effect and duration of your Battle Shout, Demoralizing Shout and Commanding Shout by %p%.",
+            "values": {
+                "%p": 10
+            },
+            "id": 1,
+            "row": 0,
+            "col": 1,
+            "max": 5,
+            "current": 0,
+            "image": "spell_nature_purge.png"
         },
 
 
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Improved Demoralizing Shout",
+            "description": "Increases the melee attack power reduction of your Demoralizing Shout by %p%.",
             "values": {
-                "%p": 2
+                "%p": 8
             },
             "id": 2,
             "row": 1,
             "col": 1,
             "max": 5,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_warrior_warcry.webp"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Unbridled Wrath",
+            "description": "Gives you a chance to generate an additional %p rage point(s) when you deal melee damage with a weapon.",
             "values": {
-                "%p": 2
+                "%p": 1
             },
             "id": 3,
             "row": 1,
             "col": 2,
             "max": 5,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "spell_nature_stoneclawtotem.png"
         },
 
 
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Blood Craze",
+            "description": "Regenerates %p% of your total Health over 6 seconds after being the victim of a critical strike.",
             "values": {
-                "%p": 2
+                "%p": 1
             },
             "id": 4,
             "row": 2,
-            "col": 0,
+            "col": 2,
             "max": 3,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "spell_shadow_summonimp.png"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Piercing Howl",
+            "description": "Causes all enemies within 10 yards to be Dazed, reducing movement speed by %p% for 6 seconds.",
             "values": {
-                "%p": 2
+                "%p": 50
             },
             "id": 5,
             "row": 2,
             "col": 1,
             "max": 1,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "spell_shadow_deathscream.png",
+            "type": "ability"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Improved Cleave",
+            "description": "Increases the bonus damage done by your Cleave ability by %p%.",
             "values": {
-                "%p": 2
+                "%p": 40
             },
             "id": 6,
             "row": 2,
-            "col": 2,
+            "col": 0,
             "max": 3,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_warrior_cleave.png"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Commanding Presence",
+            "description": "Increases the melee Attack power bonus of your Battle Shout and the health bonus of your Commanding Shout by %p%.",
             "values": {
-                "%p": 2
+                "%p": 3
             },
             "id": 7,
             "row": 2,
             "col": 3,
             "max": 5,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "spell_nature_focusedmind.png"
         },
 
 
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Dual Wield Specialization",
+            "description": "Increases the damage done by your offhand weapon by %p%.",
             "values": {
-                "%p": 2
+                "%p": 5
             },
             "id": 8,
             "row": 3,
             "col": 1,
             "max": 5,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_dualwield.png"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Enrage",
+            "description": "Gives you a %p% melee damage bonus for 12 seconds up to a maximum of 12 swings after being the victim of a critical strike.",
             "values": {
-                "%p": 2
+                "%p": 5
             },
             "id": 9,
             "row": 3,
             "col": 2,
             "max": 5,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "spell_shadow_unholyfrenzy.webp"
         },
 
 
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Improved Execute",
+            "description": "Reduces the rage cost of your Execute ability by %p.",
             "values": {
                 "%p": 2
             },
@@ -506,108 +507,111 @@ var warrior = {
             "col": 0,
             "max": 2,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "inv_sword_48.png"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Death Wish",
+            "description": "When activated, increases your physical damage by %p% and makes you immune to Fear effects, but increases all damage taken by 5%. Lasts 30 seconds.",
             "values": {
-                "%p": 2
+                "%p": 20
             },
             "id": 11,
             "row": 4,
             "col": 1,
             "max": 1,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "spell_shadow_deathpact.webp",
+            "type": "ability"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Weapon Mastery",
+            "description": "Reduces the chance for your attacks to be dodged by %p% and reduces the duration of all Disarm effects used against you by %d.<br> This does not stack with other Disarm duration reducing effects.",
             "values": {
-                "%p": 2
+                "%p": 2,
+                "%d": 25
             },
             "id": 12,
             "row": 4,
             "col": 3,
             "max": 2,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_warrior_weaponmastery.webp"
         },
 
 
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Improved Berserker Rage",
+            "description": "The Berserker Rage ability will generate %p rage when used.",
             "values": {
-                "%p": 2
+                "%p": 10
             },
             "id": 13,
             "row": 5,
             "col": 0,
             "max": 2,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "spell_nature_ancestralguardian.webp"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Flurry",
+            "description": "Increases your attack speed by %p% for your next 3 swings after dealing a melee critical strike.",
             "values": {
-                "%p": 2
+                "%p": 5
             },
             "id": 14,
             "row": 5,
             "col": 2,
             "max": 5,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_ghoulfrenzy.png"
         },
 
 
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Precision",
+            "description": "Increases your chance to hit with melee weapons by %p%.",
             "values": {
-                "%p": 2
+                "%p": 1
             },
             "id": 15,
             "row": 6,
             "col": 0,
             "max": 3,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_marksmanship.webp"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Bloodlust",
+            "description": "Instantly attack the target causing %p damage. In addition, the next 5 successful melee attacks will restore 10 health.<br> This effect lasts 8 seconds. Damage is based on your attack power.",
             "values": {
-                "%p": 2
+                "%p": 45
             },
             "id": 16,
             "row": 6,
             "col": 1,
             "max": 1,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "spell_nature_bloodlust.png",
+            "type": "ability"
         },
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Improved Whirlwind",
+            "description": "Reduces the cooldown of your Whirlwind ability by %p sec.",
             "values": {
-                "%p": 2
+                "%p": 1
             },
             "id": 17,
             "row": 6,
             "col": 2,
             "max": 2,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_whirlwind.webp"
         },
 
 
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Improved Berserker Stance",
+            "description": "Increases attack power by %p% and reduces threat caused by %p% while in Berserker Stance.",
             "values": {
                 "%p": 2
             },
@@ -616,22 +620,23 @@ var warrior = {
             "col": 2,
             "max": 5,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_racial_avatar.png"
         },
 
 
       {
-            "name": "Divine Strength",
-            "description": "Increases your total Strength by %p%.",
+            "name": "Rampage",
+            "description": "Warrior goes on a rampage, increasing attack power by %p and causeing most successful melee attacks to increase attack power by an additional 30.<br> This effect will stack up to 5 times. Lasts 30 seconds. This ability can only be used after scoring a critical hit.",
             "values": {
-                "%p": 2
+                "%p": 30
             },
             "id": 19,
             "row": 8,
             "col": 1,
             "max": 1,
             "current": 0,
-            "image": "inv_sword_27.png"
+            "image": "ability_warrior_rampage.png",
+            "type": "ability"
         },
     ]
   },
@@ -641,62 +646,63 @@ var warrior = {
     "max": 60,
     "talents": [
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Improved Bloodrage",
+        "description": "Increases the instant rage generated by yor Bloodrage ability %p.",
         "values": {
-            "%p": 2
+            "%p": 3
         },
         "id": 0,
         "row": 0,
         "col": 0,
         "max": 2,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_racial_bloodrage.png"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Tactical Mastery",
+        "description": "You retain up to an additional %p of your rage points when you change stances.<br> Also greatly increases the threat generated by your Bloodthirst and Mortal Strike abilities when you are in Defensive Stance.",
         "values": {
-            "%p": 2
+            "%p": 5
         },
         "id": 1,
         "row": 0,
         "col": 1,
         "max": 3,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "spell_nature_enchantarmor.webp"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Anticipation",
+        "description": "Increases your Defense skill by %p.",
         "values": {
-            "%p": 2
+            "%p": 4
         },
         "id": 2,
         "row": 0,
         "col": 2,
         "max": 5,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "spell_nature_mirrorimage.png"
       },
 
 
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Shield Specialization",
+        "description": "Increases your chance to block attacks by %p% and has a %c% chance to generate 1 rage when a block occurs.",
         "values": {
-            "%p": 2
+            "%p": 1,
+            "%c": 20
         },
         "id": 3,
         "row": 1,
         "col": 1,
         "max": 5,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "inv_shield_06.png"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Toughness",
+        "description": "Increases your armor value from items by %p%.",
         "values": {
             "%p": 2
         },
@@ -705,13 +711,13 @@ var warrior = {
         "col": 2,
         "max": 5,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "spell_holy_devotion.png"
       },
 
 
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Last Stand",
+        "description": "When activated, this ability temporarily grants %p% of your maximum health for 20 seconds. After the effect expires, the health is lost.",
         "values": {
             "%p": 2
         },
@@ -720,78 +726,80 @@ var warrior = {
         "col": 0,
         "max": 1,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "spell_holy_ashestoashes.png",
+        "type": "ability"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Improved Shield Block",
+        "description": "Allows your Shield Block ability to block an additional attack and increases the duration by %p second.",
         "values": {
-            "%p": 2
+            "%p": 1
         },
         "id": 6,
         "row": 2,
         "col": 1,
         "max": 1,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_defend.png"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Improved Revenge",
+        "description": "Gives your Revenge ability a %p% chance to stun the target for 3 seconds.",
         "values": {
-            "%p": 2
+            "%p": 15
         },
         "id": 7,
         "row": 2,
         "col": 2,
         "max": 3,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_revenge.webp"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Defiance",
+        "description": "Increases the threat generated by your attack by %p% while in Defensive Stance and rduces your chance to be dodged or parried by %c%.",
         "values": {
-            "%p": 2
+            "%p": 2,
+            "%c": 0.5
         },
         "id": 8,
         "row": 2,
         "col": 3,
         "max": 3,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_innerrage.png"
       },
 
 
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Improved Sunder Armor",
+        "description": "Reduces the cost of your Sunder Armor and Devestate abilities by %p rage point.",
         "values": {
-            "%p": 2
+            "%p": 1
         },
         "id": 9,
         "row": 3,
         "col": 0,
         "max": 3,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_sunder.png"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Imporved Disarm",
+        "description": "Increases the duration of your Disarm ability by %p sec(s).",
         "values": {
-            "%p": 2
+            "%p": 1
         },
         "id": 10,
         "row": 3,
         "col": 1,
         "max": 3,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_disarm.png"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Improved Taunt",
+        "description": "Reduced the cooldown of your Taunt ability by %p sec alongside increasing the range by 7 yards.",
         "values": {
             "%p": 2
         },
@@ -800,67 +808,67 @@ var warrior = {
         "col": 2,
         "max": 2,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "spell_nature_reincarnation.png"
       },
 
 
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Improved Shield Wall",
+        "description": "Increases the effect duration of your Shield Wall ability by %p secs.",
         "values": {
-            "%p": 2
+            "%p": 3
         },
         "id": 12,
         "row": 4,
         "col": 0,
         "max": 2,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_shieldwall.png"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Concussion Blow",
+        "description": "Stuns the opponent for %p seconds.",
         "values": {
-            "%p": 2
+            "%p": 5
         },
         "id": 13,
         "row": 4,
         "col": 1,
         "max": 1,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_thunderbolt.png"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Improved Shield Bash",
+        "description": "Gives your Shield Bash ability a %p% chance to silence the target for 3 seconds.",
         "values": {
-            "%p": 2
+            "%p": 50
         },
         "id": 14,
         "row": 4,
         "col": 2,
         "max": 2,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_shieldbash.png"
       },
 
 
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Shield Mastery",
+        "description": "Increases the amount of damage absorbed by your shield by %p%.",
         "values": {
-            "%p": 2
+            "%p": 10
         },
         "id": 15,
         "row": 5,
         "col": 0,
         "max": 3,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_shieldmastery.webp"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "One-Handed Weapon Specialization",
+        "description": "Increases physical damage you deal when a one-handed melee weapon is equipped by %p%.",
         "values": {
             "%p": 2
         },
@@ -869,13 +877,13 @@ var warrior = {
         "col": 2,
         "max": 5,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "inv_sword_20.png"
       },
 
 
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Improved Defensive Stance",
+        "description": "Reduces all spell damage taken while in Defensive Stance by %p%.",
         "values": {
             "%p": 2
         },
@@ -884,63 +892,65 @@ var warrior = {
         "col": 0,
         "max": 3,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_defensivestance.webp"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Shield Slam",
+        "description": "Slam the target with your shield, causing %p damage, modified by your shield block value and dispels 1 magic effect on the target.<br> Also causes a high amount of threat.",
         "values": {
-            "%p": 2
+            "%p": 225
         },
         "id": 18,
         "row": 6,
         "col": 1,
         "max": 1,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "inv_shield_05.png",
+        "type": "ability"
       },
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Focused Rage",
+        "description": "Reduces the rage cost of your offensive abilities by %p.",
         "values": {
-            "%p": 2
+            "%p": 1
         },
         "id": 19,
         "row": 6,
         "col": 2,
         "max": 3,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "ability_warrior_focusedrage.png"
       },
 
 
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Vitality",
+        "description": "Increases your total Stamina by %p% and your total Strength by %s%.",
         "values": {
-            "%p": 2
+            "%p": 1,
+            "%s": 2
         },
         "id": 20,
         "row": 7,
         "col": 1,
         "max": 5,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "inv_helmet_21.webp"
       },
 
 
       {
-        "name": "Divine Strength",
-        "description": "Increases your total Strength by %p%.",
+        "name": "Devestate",
+        "description": "Sunder the target's armor causing the Sunder Armor effect.<br> In addition, causes %p% of weapon damage plus 15 for each application of Sunder Armor on the target. <br> The Sunder Armor effect can stack up to 5 times.",
         "values": {
-            "%p": 2
+            "%p": 50
         },
         "id": 21,
         "row": 8,
         "col": 1,
         "max": 1,
         "current": 0,
-        "image": "inv_sword_27.png"
+        "image": "inv_sword_11.png"
       },
     ]
   },
