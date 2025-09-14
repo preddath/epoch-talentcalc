@@ -115,7 +115,7 @@ var paladin = {
             "name": "Illumination",
             "description": "After getting a critical effect from your Flash of Light, Holy Light or Holy Shock heal spell, gives you a %p% chance to gain mana equal to 75% of the base cost of the spell.",
             "values": {
-                "%p": 25
+                "%p": 20
             },
             "id": 8,
             "row": 3,
