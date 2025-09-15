@@ -5,14 +5,16 @@ Download and open index.html or click <a href="https://preddath.github.io/epoch-
 
 THIS IS A WORK IN PROGRESS AND NOT FULLY FUNCTIONAL
 
-Current Content:
+## Current Content:
 - Class selection
 - Warrior Trees
 - Paladin Trees
   - (not all talents have the correct text yet)
- 
+
     
-Planned Content:
-- All other Classes (duh)
+## Planned Content:
+- All other Classes <i>(duh)</i>
 - Import/ Export of Builds
 - Mobile optimization
+
+<small>This is a Fan-made project not associated with Microsoft, Blizzard or Ascension/Project Epoch.</small>
