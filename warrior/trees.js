@@ -950,7 +950,8 @@ var warrior = {
         "col": 1,
         "max": 1,
         "current": 0,
-        "image": "inv_sword_11.png"
+        "image": "inv_sword_11.png",
+        "type": "ability"
       },
     ]
   },
