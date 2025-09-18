@@ -6,10 +6,14 @@ Download and open index.html or click <a href="https://preddath.github.io/epoch-
 THIS IS A WORK IN PROGRESS AND NOT FULLY FUNCTIONAL
 
 ## Current Content:
-- Class selection
-- Warrior Trees
-- Paladin Trees
-  - (not all talents have the correct text yet)
+### Classes fully finished:
+- Warrior
+
+### Classes with missing icons/texts (technically usable):
+- Paladin
+- Hunter
+- Rogue
+- Priest
 
     
 ## Planned Content:
