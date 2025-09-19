@@ -39,7 +39,7 @@ function initTrees(classname) {
 
                     row.innerHTML+= 
                     '<div class="talentbox" id="'+key+'_'+talent.id+'" onclick="putPoint(event)" oncontextmenu="removePoint(event)" popovertarget="tooltip_'+key+'_'+talent.id+'">' + 
-                    '<img style="width: 55px" src="images/'+talent.image+'" class="talent '+classname+'"/>' + 
+                    '<img style="width: 55px" src="images/'+talent.image+'" class="talent '+classname+'" draggable="false"/>' + 
                     '<span class="talentcounter">'+talent.current+'/'+talent.max+'</span>' +
                     '<div popover="auto" id="tooltip_'+key+'_'+talent.id+'" class="tooltip '+classname+'">'+
                         '<h3>'+talent.name+'</h3>'+
