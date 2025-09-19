@@ -12,7 +12,7 @@ THIS IS A WORK IN PROGRESS AND NOT FULLY FUNCTIONAL
 ### Classes with missing icons/texts (technically usable):
 - Paladin (all icons included, Holy Tree finished)
 - Hunter (all Trees finished, no icons)
-- Rogue (no texts, no icons)
+- Rogue (Assassination Tree finished, no icons)
 - Priest (no texts, no icons)
 - Shaman (no texts, no icons)
 - Mage (no texts, no icons)
@@ -24,4 +24,4 @@ THIS IS A WORK IN PROGRESS AND NOT FULLY FUNCTIONAL
 - Import/ Export of Builds
 - Mobile optimization
 
-<small>This is a Fan-made project not associated with Microsoft, Blizzard or Ascension/Project Epoch.</small>
+<sub>This is a Fan-made project not associated with Microsoft, Blizzard or Ascension/Project Epoch.</sub>
