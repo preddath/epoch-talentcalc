@@ -24,7 +24,7 @@ function initTrees(classname) {
             let filteredTalents = build[key].talents.filter((item) => item.row == i);
             for (let j=0;j<4;j++) {
                 if (!filteredTalents.find(item => item.col == j)) {
-                    row.innerHTML+= '<span style="width: 55px;"></span>';
+                    row.innerHTML+= '<span style="width: 59px;"></span>';
                 } else {
                     const talent = filteredTalents.find((item) => item.col == j);
 
