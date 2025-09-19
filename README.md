@@ -10,14 +10,17 @@ THIS IS A WORK IN PROGRESS AND NOT FULLY FUNCTIONAL
 - Warrior
 
 ### Classes with missing icons/texts (technically usable):
-- Paladin
-- Hunter
+- Paladin (all icons included, Holy Tree finished)
+- Hunter (BM and MM Trees finished, no icons)
 - Rogue
 - Priest
+- Shaman
+- Mage
+- Warlock
+- Druid
 
     
 ## Planned Content:
-- All other Classes <i>(duh)</i>
 - Import/ Export of Builds
 - Mobile optimization
 
