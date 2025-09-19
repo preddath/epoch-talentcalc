@@ -596,10 +596,10 @@ var hunter = {
     "max": 60,
     "talents": [
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Monster Slaying",
+        "description": "Increases all damage caused against Beasts, Giants and Dragonkin targets by %p% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional %p%.",
         "values": {
-          "%p": 3
+          "%p": 1
         },
         "id": 0,
         "row": 0,
@@ -609,8 +609,8 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Humanoid Slaying",
+        "description": "Increases all damage caused against Humanoid targets by %p% and increases critical damage caused against Humanoid targets by an additional %p%.",
         "values": {
           "%p": 3
         },
@@ -622,10 +622,10 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Hawk Eye ",
+        "description": "Increases the Range of your ranged weapons by %p yards.",
         "values": {
-          "%p": 3
+          "%p": 2
         },
         "id": 2,
         "row": 0,
@@ -635,10 +635,10 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Savage Strikes ",
+        "description": "Increases the critical strike chance of Raptor Strike and Mongoose Bite by %p%.",
         "values": {
-          "%p": 3
+          "%p": 10
         },
         "id": 3,
         "row": 0,
@@ -650,23 +650,23 @@ var hunter = {
 
 
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Entrapment",
+        "description": "Gives your Immolation Trap, Frost Trap, Explosive Trap, and Snake Trap a %p% chance to entrap the target, preventing them from moving for 4 sec.",
         "values": {
-          "%p": 3
+          "%p": 8
         },
         "id": 4,
         "row": 1,
         "col": 0,
         "max": 3,
         "current": 0,
-        "image": "ability_rogue_eviscerate.png"
+        "image": "ability_ensnare.webp"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Deflection",
+        "description": "Increases your Parry chance by %p%.",
         "values": {
-          "%p": 3
+          "%p": 1
         },
         "id": 6,
         "row": 1,
@@ -676,10 +676,10 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Improved Wing Clip",
+        "description": "Gives your Wing Clip ability a %p% chance to immobilize the target for 5 seconds.",
         "values": {
-          "%p": 3
+          "%p": 7
         },
         "id": 7,
         "row": 1,
@@ -691,10 +691,10 @@ var hunter = {
       
       
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Clever Traps",
+        "description": "Increases the duration of Freezing and Frost Trap effects by %p%, the damage of Immolation and Explosive Trap effects by %p% and the number of Snakes summoned by Snake Traps by %p%.",
         "values": {
-          "%p": 3
+          "%p": 15
         },
         "id": 8,
         "row": 2,
@@ -704,10 +704,10 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Survivalist",
+        "description": "Increases total health by %p%.",
         "values": {
-          "%p": 3
+          "%p": 2
         },
         "id": 9,
         "row": 2,
@@ -717,10 +717,10 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Deterrence",
+        "description": "When activated, increases your Dodge and Parry chance by %p% for 10 seconds.",
         "values": {
-          "%p": 3
+          "%p": 25
         },
         "id": 10,
         "row": 2,
@@ -733,10 +733,10 @@ var hunter = {
 
 
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Trap Mastery",
+        "description": "Decreases the chance enemies will resist trap effects by %p%.",
         "values": {
-          "%p": 3
+          "%p": 5
         },
         "id": 11,
         "row": 3,
@@ -746,10 +746,11 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Surefooted",
+        "description": "Increases hit chance by %p% and increases the chance movement impairing effects will be resisted by an additional %c%.",
         "values": {
-          "%p": 3
+          "%p": 3,
+          "%c": 5
         },
         "id": 12,
         "row": 3,
@@ -759,10 +760,10 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Improved Feign Death",
+        "description": "Reduces the chance your Feign Death ability will be resisted by %p%.",
         "values": {
-          "%p": 3
+          "%p": 2
         },
         "id": 13,
         "row": 3,
@@ -774,10 +775,10 @@ var hunter = {
 
 
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Survival Instincts",
+        "description": "Reduces all damage taken by %p% and increases attack power by %p%.",
         "values": {
-          "%p": 3
+          "%p": 2
         },
         "id": 14,
         "row": 4,
@@ -787,10 +788,10 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Killer Instinct",
+        "description": "Increases your critical strike chance with all attacks by %p%.",
         "values": {
-          "%p": 3
+          "%p": 1
         },
         "id": 15,
         "row": 4,
@@ -800,8 +801,8 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Counterattack",
+        "description": "A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 seconds. <br><br> Counterattack cannot be blocked, dodged or parried.",
         "values": {
           "%p": 3
         },
@@ -816,10 +817,11 @@ var hunter = {
 
 
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Resourcefulness",
+        "description": "Reduces the mana cost of all traps and melee abilities by %p% and reduces the cooldown of all traps by %s sec.",
         "values": {
-          "%p": 3
+          "%p": 20,
+          "%s": 2
         },
         "id": 17,
         "row": 5,
@@ -829,8 +831,8 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Lightning Reflexes",
+        "description": "Increases your Agility by %p%.",
         "values": {
           "%p": 3
         },
@@ -844,10 +846,10 @@ var hunter = {
 
 
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Thrill of the Hunt",
+        "description": "Gives you a %p% chance to regain 40% of the mana cost of any shot when it critically hits.",
         "values": {
-          "%p": 3
+          "%p": 33
         },
         "id": 19,
         "row": 6,
@@ -857,11 +859,9 @@ var hunter = {
         "image": "ability_rogue_eviscerate.png"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
-        "values": {
-          "%p": 3
-        },
+        "name": "Wyvern Sting",
+        "description": "A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 300 Nature damage over 12 sec.<br><br> Only usable out of combat.<br> Only one Sting per Hunter can be active on the target at a time.",
+        "values": {},
         "id": 20,
         "row": 6,
         "col": 1,
@@ -871,8 +871,8 @@ var hunter = {
         "type": "abiltiy"
       },
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Expose Weakness",
+        "description": "Your ranged criticals have a p% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all attackers against that target by 25% of your Agility for 7 sec.",
         "values": {
           "%p": 3
         },
@@ -886,10 +886,10 @@ var hunter = {
 
 
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
+        "name": "Master Tactician",
+        "description": "Your successful ranged attacks have a 6% chance to increase your critical strike chance with all attacks by %p% for 8 seconds.",
         "values": {
-          "%p": 3
+          "%p": 2
         },
         "id": 22,
         "row": 7,
@@ -901,11 +901,9 @@ var hunter = {
 
 
       {
-        "name": "Improved ",
-        "description": "Increases  by %p%.",
-        "values": {
-          "%p": 3
-        },
+        "name": "Readiness",
+        "description": "When activated, this ability immediatly finishes the cooldown on your other Hunter abilities.",
+        "values": {},
         "id": 23,
         "row": 8,
         "col": 1,

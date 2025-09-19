@@ -11,13 +11,13 @@ THIS IS A WORK IN PROGRESS AND NOT FULLY FUNCTIONAL
 
 ### Classes with missing icons/texts (technically usable):
 - Paladin (all icons included, Holy Tree finished)
-- Hunter (BM and MM Trees finished, no icons)
-- Rogue
-- Priest
-- Shaman
-- Mage
-- Warlock
-- Druid
+- Hunter (all Trees finished, no icons)
+- Rogue (no texts, no icons)
+- Priest (no texts, no icons)
+- Shaman (no texts, no icons)
+- Mage (no texts, no icons)
+- Warlock (no texts, no icons)
+- Druid (no texts, no icons)
 
     
 ## Planned Content:
